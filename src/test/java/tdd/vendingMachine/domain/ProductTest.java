@@ -13,8 +13,8 @@ public class ProductTest {
 
 	@Test
 	public void justSimpleValueTest() {
-		assertTrue(Product.CHOCOLATE_BAR.getPrice() == 350 );
-		assertTrue(Product.COLA_DRINK_025.getPrice() == 220 );
+		assertTrue(Product.COLA_DRINK_025.getPrice() == 350 );
+		assertTrue(Product.CHOCOLATE_BAR.getPrice() == 220 );
 		assertTrue(Product.MINERAL_WATER_033.getPrice() == 140 );
 	}
 
