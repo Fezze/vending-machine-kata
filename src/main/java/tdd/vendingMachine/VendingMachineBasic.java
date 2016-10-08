@@ -28,18 +28,12 @@ public class VendingMachineBasic implements VendingMachine
 		this.shelves = new ArrayList<Shelve>();
 	}
 	
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#AddShelve(tdd.vendingMachine.mechanism.Shelve)
-	 */
 	@Override
 	public void AddShelve( Shelve shelve )
 	{
 		this.shelves.add( shelve );
 	}
 	
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#getProduct(int)
-	 */
 	@Override
 	public void getProduct( int id )
 	{
@@ -102,9 +96,6 @@ public class VendingMachineBasic implements VendingMachine
 		this.selectedShelve = null;
 	}
 	
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#putCoin(tdd.vendingMachine.domain.Coin)
-	 */
 	@Override
 	public void putCoin( Coin coin )
 	{
@@ -119,9 +110,6 @@ public class VendingMachineBasic implements VendingMachine
 		}
 	}
 	
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#cancel()
-	 */
 	@Override
 	public void cancel()
 	{
@@ -130,51 +118,31 @@ public class VendingMachineBasic implements VendingMachine
 		this.display.setMessage( DisplayMessage.EMPTY_MESSAGE.getMessage() );
 	}
 
-	
-	// Tylko dla testów i tylko by bardziej już nie komplikować.
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#getDisplay()
-	 */
 	@Override
 	public Display getDisplay() {
 		return display;
 	}
 
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#getSelectedShelve()
-	 */
 	@Override
 	public Shelve getSelectedShelve() {
 		return selectedShelve;
 	}
 
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#getCashbox()
-	 */
 	@Override
 	public Cashbox getCashbox() {
 		return cashbox;
 	}
 
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#getPuttedCashbox()
-	 */
 	@Override
 	public Cashbox getPuttedCashbox() {
 		return puttedCashbox;
 	}
 
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#getMechanism()
-	 */
 	@Override
 	public Mechanism getMechanism() {
 		return mechanism;
 	}
 
-	/* (non-Javadoc)
-	 * @see tdd.vendingMachine.VendingMachine#getShelves()
-	 */
 	@Override
 	public List<Shelve> getShelves() {
 		return shelves;
