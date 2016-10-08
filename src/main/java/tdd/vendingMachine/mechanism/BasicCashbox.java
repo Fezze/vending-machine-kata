@@ -96,4 +96,9 @@ public class BasicCashbox implements Cashbox {
 			this.removeCoins( coin, tmpCashbox.getCountCoins(coin) );
 		}
 	}
+	
+	public String convertIntToPrice( int price )
+	{
+		return "" + ((int)price/100) +"." + (price%100);
+	}
 }

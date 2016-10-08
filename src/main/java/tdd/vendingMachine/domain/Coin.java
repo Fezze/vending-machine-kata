@@ -18,5 +18,10 @@ public enum Coin {
     public int getValue() {
         return value;
     }
+    
+    public String getConvertValue()
+    {
+    	return "" + ((int)this.value/100) +"." + (this.value%100);
+    }
 }
 

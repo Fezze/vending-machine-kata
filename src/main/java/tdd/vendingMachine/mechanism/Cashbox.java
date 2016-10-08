@@ -24,4 +24,6 @@ public interface Cashbox {
 
 	void removeByCashbox(Cashbox tmpCashbox);
 
+	String convertIntToPrice( int price );
+	
 }

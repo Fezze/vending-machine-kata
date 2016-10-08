@@ -21,4 +21,9 @@ public enum Product {
     public String getName(){
     	return name;
     }
+    
+    public String getConvertPrice()
+    {
+    	return "" + ((int)this.price/100) +"." + (this.price%100);
+    }
 }
