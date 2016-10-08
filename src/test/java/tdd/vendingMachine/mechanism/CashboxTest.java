@@ -26,9 +26,7 @@ public class CashboxTest {
 	}
 	
 	@Test
-	public void isSetZero() {	
-		this.cashbox.emptyCashbox();
-		
+	public void isSetZero() {		
 		for( Coin coin : Coin.values()  )
 		{
 			assertTrue(  0 == this.cashbox.getCountCoins( coin ) );
@@ -36,8 +34,7 @@ public class CashboxTest {
 	}
 	
 	@Test
-	public void puttedOK() {	
-		this.cashbox.emptyCashbox();
+	public void puttedOK() {
 		for( Coin coin : Coin.values()  )
 		{
 			this.cashbox.putCoin(coin);
@@ -49,7 +46,6 @@ public class CashboxTest {
 	
 	@Test
 	public void puttedManyOK() {	
-		this.cashbox.emptyCashbox();
 		int randomInt, randomInt2;
 		for( Coin coin : Coin.values()  )
 		{
@@ -64,7 +60,6 @@ public class CashboxTest {
 	
 	@Test
 	public void puttedAndRemove() {	
-		this.cashbox.emptyCashbox();
 		int randomInt, randomInt2;
 		for( Coin coin : Coin.values()  )
 		{
@@ -81,9 +76,7 @@ public class CashboxTest {
 	}
 	
 	@Test
-	public void sumAllValueTest() {	
-		this.cashbox.emptyCashbox();
-		
+	public void sumAllValueTest() {			
 		float sum = 0.0f;
 		
 		for( Coin coin : Coin.values()  )
@@ -98,7 +91,6 @@ public class CashboxTest {
 	
 	@Test
 	public void connectCashboxTest() {	
-		this.cashbox.emptyCashbox();
 		Cashbox tmpCashbox = new BasicCashbox();
 
 		for( Coin coin : Coin.values()  )
@@ -119,7 +111,6 @@ public class CashboxTest {
 	
 	@Test
 	public void removeByCashboxTest() {	
-		this.cashbox.emptyCashbox();
 		Cashbox tmpCashbox = new BasicCashbox();
 
 		for( Coin coin : Coin.values()  )
